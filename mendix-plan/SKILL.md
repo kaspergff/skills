@@ -1,7 +1,6 @@
 ---
 name: mendix-plan
 description: Turn a Mendix input — a vague idea, a rough story, a bug, a feature request — into a concrete development plan of one or more stories, written to markdown. Sharpens the input via the challenge skill first, then writes stories with acceptance criteria, affected model parts, and a build approach per part. Use when the user wants a Mendix feature or change planned out into actionable work. Planning only — the actual building stays with the developer (Studio Pro, Maia, Mendix MCP, mxcli).
-disable-model-invocation: true
 ---
 
 # Plot

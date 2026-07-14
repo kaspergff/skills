@@ -1,7 +1,6 @@
 ---
 name: mendix-challenge
 description: Interview the developer relentlessly to sharpen a Mendix plan, decision, or idea before any building starts. One question at a time, resolving decisions until a shared understanding is reached. Use when the user wants to stress-test their thinking about a Mendix feature, or uses any 'challenge'/'grill'/'doorvragen' trigger phrases. Planning only — never builds.
-disable-model-invocation: true
 ---
 
 # Challenge
