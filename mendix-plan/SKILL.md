@@ -3,13 +3,13 @@ name: mendix-plan
 description: Turn a Mendix input — a vague idea, a rough story, a bug, a feature request — into a concrete development plan of one or more stories, written to markdown. Sharpens the input via the challenge skill first, then writes stories with acceptance criteria, affected model parts, and a build approach per part. Use when the user wants a Mendix feature or change planned out into actionable work. Planning only — the actual building stays with the developer (Studio Pro, Maia, Mendix MCP, mxcli).
 ---
 
-# Plot
+# Plan
 
-Take a Mendix input at any fidelity — a one-line idea, a half-formed story, a bug report, "we need to let managers export this" — and **plot the course to it**: a development plan of one or more stories, written to markdown, ready for the developer to build.
+Take a Mendix input at any fidelity — a one-line idea, a half-formed story, a bug report, "we need to let managers export this" — and **plan the course to it**: a development plan of one or more stories, written to markdown, ready for the developer to build.
 
 The size of the input does not matter here. A one-line idea and a big feature both enter the same way; the plan just grows more stories, with a stated order and dependencies between them. When the work is large, slice it into several stories and make the sequencing explicit (see [Larger work](#larger-work)) rather than forcing it into one.
 
-## Plot, don't build
+## Plan, don't build
 
 This skill stops at a plan. It never opens Studio Pro, never writes microflows, never touches the model to change it. Building is the developer's job, done however they prefer — Studio Pro by hand, Maia, the Mendix MCP, or mxcli. The plan says *what* and *why* and *where in the model*; the developer owns the *how it gets typed in*. Naming the right tool per piece of work is in scope; doing the work is not.
 
