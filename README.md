@@ -13,19 +13,24 @@ Elke skill staat in een eigen map met een `SKILL.md`. De frontmatter (`name`, `d
 
 ## Installeren
 
-Kopieer of symlink een skillmap naar je persoonlijke skills-directory:
+### Aanbevolen: linken (Windows)
 
-```bash
-# per skill
-cp -r mendix-plan ~/.claude/skills/
-cp -r mendix-challenge ~/.claude/skills/
-```
-
-Op Windows (PowerShell):
+Draai `link-skills.ps1`. Dit maakt een junction voor elke skillmap in
+`~/.claude/skills/`, zodat de repo de enige bron blijft — wat je hier bewerkt en
+pusht is direct actief als skill. Geen admin-rechten nodig.
 
 ```powershell
-Copy-Item mendix-plan      "$env:USERPROFILE\.claude\skills\" -Recurse
-Copy-Item mendix-challenge "$env:USERPROFILE\.claude\skills\" -Recurse
+./link-skills.ps1          # linkt alle skills uit deze repo
+./link-skills.ps1 -Force   # overschrijft ook bestaande echte mappen
 ```
 
-Herstart Claude Code (of start een nieuwe sessie) zodat de skills worden ingeladen.
+Voeg je later een nieuwe skillmap toe? Draai het script nog eens; bestaande
+junctions worden ververst en nieuwe erbij gelinkt.
+
+### Alternatief: kopiëren
+
+```bash
+cp -r mendix-plan mendix-challenge ~/.claude/skills/
+```
+
+Start daarna een nieuwe Claude Code-sessie zodat de skills worden ingeladen.
